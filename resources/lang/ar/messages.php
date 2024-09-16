@@ -1,0 +1,2 @@
+<?php
+// Translate To Arabic

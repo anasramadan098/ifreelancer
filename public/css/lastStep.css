@@ -1,0 +1,76 @@
+.step-3 {
+    input,
+    select,
+    .radio {
+        width: calc(100% / 2 - 10px) !important;
+    }
+    .inputs {
+        display: flex;
+        gap: 15px;
+        margin-top: 10px;
+        flex-wrap: wrap;
+        .input {
+            align-items: center;
+            display: flex;
+            gap: 10px;
+            width: auto !important;
+        }
+    }
+    input[type="radio"] {
+        /* Add if not using autoprefixer */
+        -webkit-appearance: none;
+        /* Remove most all native input styles */
+        appearance: none;
+        font: inherit;
+        color: var(--primary-color);
+        width: 1.15em !important;
+        height: 1.15em;
+        border: 0.15em solid var(--primary-color);
+        border-radius: 50%;
+        transform: translateY(-0.075em);
+        display: grid;
+        place-content: center;
+        padding: 5px;
+        &::before {
+            content: "";
+            width: 0.65em ;
+            height: 0.65em;
+            border-radius: 50%;
+            transform: scale(0);
+            transition: .41s transform ease-in-out;
+            box-shadow: inset 1em 1em var(--primary-color);
+            background-color: var(--primary-color);
+
+          }
+          &:checked::before {
+            transform: scale(1);
+          }
+          &:focus {
+            outline: max(2px, 0.15em) solid var(--seconde-color);
+            outline-offset: max(2px, 0.15em);
+          }
+      }
+    textarea {
+        width: 100%;
+        min-height: 150px;
+        color: #999;
+        border: 1px solid #dbdbdb;
+        background-color: #fff;
+        padding: 15px 20px;
+        outline: none;
+        border-radius: 6px;
+        transition: .3s;
+        &:focus {
+            border-color: var(--primary-color);
+        }
+    }
+    .radio {
+        margin: 20px 0;
+    }
+    .btns {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+}

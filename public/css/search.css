@@ -1,0 +1,200 @@
+.bg {
+    background-image: url(../imgs/search-bg.jpg);
+    flex-direction: column;
+}
+.content {
+    display: flex;
+    gap: 3%;
+    background-color: #eee;
+    nav {
+        background-color: #fff;
+        flex-basis: 40%;
+        height: fit-content;
+        form {
+            .filter {
+                h4 {
+                    margin-top: 20px;
+                    color: #222;
+                    font-weight: 600;
+                }
+                h3 {
+                    padding: 20px 30px;
+                    background-color: #fcfcfc;
+                    border-bottom: 1px solid #eee;
+                    color: #333;
+                    font-size: .9em;
+                    font-weight: 600;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    &.active {
+                        background-color: #fff;
+                        border-bottom: none;
+                        padding-bottom: 0;
+                    }
+                    span {
+                        color: #55acee;
+                        margin-left: 7px;
+                        font-size: 11px;
+                        font-weight: normal;
+                    }
+                    i {
+                        cursor: pointer;
+                        transition: .3s;
+                        &.active {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+                
+                .inputs {
+                    padding:0 30px  20px;
+                    border-bottom: 1px solid #eee;
+                    &.row .input{
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                    }
+                    .input {
+                        margin: 10px 0;
+                        position: relative;
+                    }
+                    
+                    .prices {
+                        justify-content: space-between;
+                        margin: 20px 0 5px;
+                        input {
+                            width: 45%;
+                            padding: 10px;
+                            outline: none;
+                            border: 1px solid #999;
+                            border-radius: 6px;
+                            &:focus {
+                                border-color: var(--primary-color);
+                            }
+                        }
+                    }
+
+                }
+            }
+            > p {
+                color: #333;
+                text-align: center;
+                font-size: 14px;
+                padding: 20px  30px 5px;
+                width: 80%;
+                margin: auto;
+            }
+            > input {
+                margin: 10px auto;
+                display: block;
+                width: 85%;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+    .cards {
+        width: 100%;
+        display: block;
+        .card {
+            max-width: none;
+            background-color: #fff;
+            display: flex;
+            cursor: pointer;
+            height: fit-content;
+            border: none;
+            margin-bottom: 20px;
+            &.feature {
+                background-color: #fffdf3;
+            }
+            input[type="submit"] {
+                background-color: transparent;
+            }
+            ul.skills {
+                margin: 20px 0;
+                display: flex;
+                flex-wrap: wrap;
+                a {
+                    margin: 3px;
+                    display: block;
+                    padding: 5px 18px;
+                    border: 1px solid #ddd;
+                    border-radius: 20px;
+                    color: #333;
+                    transition: .3s;
+                    &:hover {
+                        color: #fff;
+                        background-color: var(--primary-color);
+                        border-color: var(--primary-color);
+                    }
+                }
+            }
+            .text {
+                padding: 30px;
+                max-width: 60%;
+                flex-basis: 60%;
+                position: relative;
+                border-right:1px solid #ddd ;
+                p.name {
+                    i {
+                        color:var(--seconde-color);
+                    }
+                    a {
+                        color: #000;
+                        margin-left: 5px;
+                    }
+                }
+                > a {
+                    color: #000;
+                    font-size: 1.5em;
+                }
+                p.cost {
+                    font-size: 18px;
+                    margin: 10px 0;
+                    i {
+                        margin-right: 5px;
+                    }
+                }
+                p.desc {
+                    font-size: 14px;
+                }
+
+            }
+            ul.info {
+                padding: 30px;
+                width: 100%;
+                flex-basis: 40%;
+                li {
+                    display: flex;
+                    gap: 15px;
+                    align-items: center;
+                    margin-bottom: 13px;
+                    img,
+                    i {
+                        width: 20px;
+                        font-size: 20px;
+                        color: var(--seconde-color);
+                    }
+                    a {
+                        cursor: pointer;
+                        color: #ff5851;
+                    }
+                }
+                > a {
+                    display: block;
+                    width: 100%;
+                    margin-right: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+
+.category-result , 
+.skills-result {
+    max-height: 200px;
+    overflow-y: scroll;
+}

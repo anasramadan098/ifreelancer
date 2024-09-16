@@ -1,0 +1,112 @@
+.browse {
+    display: flex;
+    h2 {
+        padding: 20px;
+        font-size: 1.1em;
+        color: #222;
+        font-weight: 500;
+        border: 1px solid #ddd;
+        width: 25%;
+        display: flex;
+        align-items: center;
+    }
+    .mySwiper {
+        width: 75%;
+        & > * {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            border: 1px solid #ddd;
+            cursor: grab;
+            transition: .3s;
+            &:hover {
+                background-color: #eee;
+            }
+            .img {
+                width:  50px;
+                height: 50px;
+                border-radius: 50%;
+                border: 1px solid #ddd;
+                margin-right: 10px;
+                padding: 10px;
+                background-color: #fff;
+                img {
+                    max-width: 100%;
+                }
+            }
+            .text {
+                a {
+                    font-size: 1em;
+                    font-weight: normal;
+                    color: #000;
+                    transition: .3s;
+                    &:hover {
+                        color: var(--primary-color);
+                    }
+                }
+                p {
+                    font-size: 14px;
+                    color: #777;
+                }
+            }
+        }
+    }
+}
+.content {
+    .cards {
+        .card {
+            display: block ;
+            padding: 20px 30px;
+            .head {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 10px 10px 0;
+                .info {
+                    display: flex;
+                    align-items: center;
+                    .freelancer-img {
+                        border-radius:6px;
+                        max-width: 225px;
+                        max-height: 225px;
+                        min-height: 225px;
+                        min-width: 225px;
+                    }
+                    .text {
+                        border-right: none;
+                        max-width: none;
+                        padding: 0 30px;
+                    }
+                    
+                }
+                .rate {
+                    text-align: center;
+                    .stars {
+                        display: flex;
+                        gap: 5px;
+                        i {
+                            color: #fdd003;;
+                        }
+                    }
+                    span {
+                        margin: 25px 0;
+            
+                        .freelancer-rate {
+                            font-size: 1.5em;
+                        }
+                    }
+                    p a{
+                        color: #55acee;
+                        font-size: 14px;
+                        font-weight: normal;
+                    }
+                }
+            }
+            p.desc {
+                color: #333;
+                margin: 20px 0;
+            }
+    
+        }
+    }
+}

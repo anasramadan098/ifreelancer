@@ -1,0 +1,69 @@
+form {
+    display: flex;
+    gap: 10%;
+    flex-wrap: wrap;
+    --w : calc(100% / 2 - 10%);
+    .inputs,
+    > .input {
+        width: var(--w);
+    }
+    input,
+    textarea {
+        width: 100%;
+    }
+    textarea {
+        height: 300px;
+        resize: vertical;
+        margin: 20px 0;
+    }
+    .inputs {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        h3 {
+            margin: 0 10px;
+        }
+        > .input {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            margin: 0 10px;
+            &.prices {
+                flex-direction: row !important;
+            }
+        }
+        input[type="radio"] {
+            padding: 0;
+        }
+        &.skills {
+            flex-direction: column;
+            width: 100%;
+            > .input {
+                width: 100%;
+            }
+            .all-skills
+            ,.selected-skills {
+                width: 100%;
+            }
+        }
+        &.faqs {
+            flex-direction: column;
+            width: 100%;
+            h3 {
+                margin-bottom: 20px;
+            }
+           .input {
+            width: 100%;
+            margin: 20px 0;
+               .btn {
+                   float: right;
+                   font-weight: 500;
+                   background-color: var(--seconde-color);
+               }
+           }
+
+        }
+    }
+
+}

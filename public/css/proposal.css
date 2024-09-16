@@ -1,0 +1,204 @@
+.bg {
+    background: url(../imgs/search-bg.jpg);
+}
+
+.job-title {
+    background-color: #f7f7f7;
+    padding: 30px;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .text {
+        h2 {
+            color: #323232;
+            font-size: 1.7em;
+        }
+        ul {
+            display: flex;
+            margin-top: 20px;
+            li{
+                padding: 6px 10px;
+                &:not(:last-child){ 
+                    border-right: 1px solid #999;
+                }
+                i{
+                    margin-right: 15px;
+                }
+                span{
+                    color: #777;
+                }
+            }
+        }
+        .btn {
+            border: none;
+            cursor: pointer;
+            padding: 20px 40px;
+        }
+    }
+
+}
+.proposal {
+    padding: 50px 100px ;
+}
+.proposal form {
+    background: #fff;
+    padding: 20px 0;
+    border: 1px solid #eee;
+    margin-top: 30px;
+    border-radius: 6px;
+}
+ .proposal form h2 {
+    padding: 20px 30px;
+}
+ .proposal form .inputs {
+    padding: 20px 30px;
+    border: 1px solid #eee;
+    background-color: #fcfcfc;
+}
+ .proposal form .inputs .flex {
+    display: flex;
+    gap: 20px;
+}
+ .proposal form .inputs .prices {
+    max-width: 80%;
+    position: relative;
+}
+ .proposal form .inputs .prices i{
+    opacity: 0.8;
+}
+ .proposal form  .inputs .prices input,
+ .proposal form textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #dbdbdb;
+    background: #fff;
+    outline-color:#dbdbdb;
+    border-radius: 3px;
+    transition: .6s;
+}
+ .proposal form .inputs .prices input:focus,
+ .proposal form textarea:focus {
+    outline-color: var(--primary-color);
+}
+ .proposal form  .inputs .prices input {
+    padding-left: 60px;
+}
+ .proposal form  .inputs .prices::after {
+    content: '($)';
+    position: absolute;
+    left: 5%;
+    top: 7%;
+    color:green;
+    z-index: 500;
+}
+ .proposal form .inputs .arrow {
+    color: #999;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid #ddd;
+    display: flex;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+ .proposal form .others {
+    padding: 20px 30px;
+}
+ .proposal form textarea {
+    resize: vertical;
+    height: 200px;
+}
+ .proposal form .files {
+    padding: 10px;
+    border: 2px dashed  #ddd;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+ .proposal form button.btn {
+    outline: none;
+    border: none;
+    margin-top: 30px;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+.calculates {
+    margin-top: 20px;
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+.calculates div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #999;
+    padding: 20px 0;
+}
+.calculates p:first-child {
+    font-weight: bold;
+}
+.calculates p:first-child .italic {
+    font-style: italic;
+} 
+.calculates p:first-child .italic span{
+    color: green;
+} 
+
+.calculates p:last-child {
+    font-weight: bold;
+    color: #777;
+    font-size: 14px;
+}
+
+
+
+
+
+.proposals {
+    padding: 20px 0;
+    .card {
+        display: flex;
+        width: 100%;
+        max-width: none;
+        border: 1px solid var(--seconde-color);
+        padding: 10px;
+        gap: 20px;
+        position: relative;
+        img {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #eee;
+            border-radius: 4px;
+        }
+        .text {
+            h3 {
+                color: #323232;
+                font-size: 1.7em;
+            }
+            p {
+                color: #777;
+                line-height: 2;
+                font-size: 18px;
+            }
+        }
+        .price {
+            span {
+                padding: 3px !important;
+                margin: 0;
+            }
+        }
+        .actions {
+            position: absolute;
+            bottom: 20px;
+            right: 10px;
+        }
+    
+    }
+}

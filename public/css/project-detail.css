@@ -1,0 +1,105 @@
+.bg {
+    background: url(../imgs/search-bg.jpg);
+}
+
+
+.job-title {
+    background-color: #f7f7f7;
+    padding: 30px;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .text {
+        h2 {
+            color: #323232;
+            font-size: 1.7em;
+        }
+        ul {
+            display: flex;
+            margin-top: 20px;
+            li{
+                padding: 6px 10px;
+                &:not(:last-child){ 
+                    border-right: 1px solid #999;
+                }
+                i{
+                    margin-right: 15px;
+                }
+                span{
+                    color: #777;
+                }
+            }
+        }
+    }
+    .btn {
+        border: 1px solid var(--primary-color);
+        cursor: pointer;
+        padding: 17px 37px;
+        margin-right: 0;
+    }
+
+}
+
+/* Start Content Section */
+section.content {
+    padding: 80px;
+}
+
+/* Start Detials */
+.details {
+    margin: 50px 0;
+    display: flex;
+    gap: 30px;
+    .description {
+        flex: 1;
+    }
+}
+
+.details .description h6{
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+.details .description .text p{
+    color: #555;
+}
+.details .nav {
+    min-width: 250px;
+    flex-basis: 30%;
+} 
+.details .nav .box{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px 10px 0;
+    border: 1px solid #eee;
+} 
+.details .nav .box:first-child {
+    border-radius: 8px 8px 0 0;
+}
+.details .nav .box:last-child {
+    border-radius: 0 0 8px 8px;
+}
+.details .nav .box i{
+    margin-left: 10px;
+    padding:  10px ;
+    border-right: 1px solid #ddd;
+    color: var(--primary-color);
+    font-size: 2em;
+} 
+.details .nav .box .text{
+    padding:  10px ;
+
+} 
+.details .nav .box .text p.price{
+    color: var(--seconde-color);
+    font-weight: bold;
+    font-size: 1.3em;
+} 
+.details .nav .box .text p.desc{
+    color: #333;
+    font-size: 13px;
+} 
+/* End Details */
+/* End Content Section */ 

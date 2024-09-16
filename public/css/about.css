@@ -1,0 +1,27 @@
+.content {
+    padding: 60px;
+    background-color: #f7f7f7;
+    .part {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+        &:not(:last-child) {
+            border-bottom: 1px solid #ddd;
+        }
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        .title {
+            text-align: left;
+            h5::after {
+                left: 0;
+                transform: translateX(0);
+            }
+        }
+        img {
+            max-height: 400px;
+        }
+    }
+}
